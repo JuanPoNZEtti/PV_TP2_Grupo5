@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17 </title>
+</head>
+<body>
+    <script>
+        //Retornan el numero de veces que aparece la letra a
+
+        let frase = prompt(`Ingrese frase: `);
+        let contador=0;
+
+        const contarLetraA = (frase) => {
+            for (let i = 0; i < frase.length; i++) {
+                if (frase[i] === "a") {
+                    contador++;
+                };
+            };
+        };
+
+        contarLetraA(frase);
+        document.write(`La veces que aparece la letra a son: ${contador}`);
+        
+    </script>
+</body>
+</html>
