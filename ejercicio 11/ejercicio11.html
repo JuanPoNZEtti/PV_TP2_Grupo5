@@ -6,6 +6,15 @@
     <title>ejercicio11</title>
 </head>
 <body>
-    <script src="ejercicio11.js"></script>
+    <script>
+        let kilometros = +prompt(`ingrese kilometros recorrido: `);
+let combustible = +prompt(`ingrese litros de combustible consumido: `);
+if (kilometros > 0 && combustible > 0){
+    let combustiblePorKm = combustible/kilometros;
+document.write(`usted consumió ${combustiblePorKm} por kilometro`)
+}else{
+    alert(`¡ERROR!`)
+}
+    </script>
 </body>
 </html>
