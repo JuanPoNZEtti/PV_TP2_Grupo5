@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio11</title>
+</head>
+<body>
+    <script>
+        let kilometros = +prompt(`ingrese kilometros recorrido: `);
+let combustible = +prompt(`ingrese litros de combustible consumido: `);
+if (kilometros > 0 && combustible > 0){
+    let combustiblePorKm = combustible/kilometros;
+document.write(`usted consumió ${combustiblePorKm} por kilometro`)
+}else{
+    alert(`¡ERROR!`)
+}
+    </script>
+</body>
+</html>
