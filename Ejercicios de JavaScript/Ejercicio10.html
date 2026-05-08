@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let cantidad = parseInt(prompt("Ingrese una serie numeros enteros"));
+
+        let num = [];
+
+        for (let i = 1; i <= cantidad; i++) {
+            let numero= parseInt(prompt("Ingrese un numero"));
+            num.push(numero);
+        }
+
+        let suma = 0;
+
+        for (let i = 0; i < num.length; i++) {
+            suma += num[i];
+        }
+
+        let promedio = suma / cantidad;
+
+
+        document.write(`Números ingresados: ${num}<br>`);
+        document.write(`Promedio: ${promedio}`);
+
+        console.log(`Números ingresados: ${num}`);
+        console.log(`Promedio: ${promedio}`);
+
+    </script>
+    
+</body>
+</html>
