@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(122, 151, 254);
+    margin: 0;
+    
+}
+h1 {
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#alumno-section {
+    background-color:rgba(236, 204, 204, 0.93);
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+    border-radius: 50px;
+    padding: 80px 50px;
+
+}
+.alumno-input{
+    margin-bottom: 10px;
+}
+#button-enviar {
+    width: 50px;
+}
