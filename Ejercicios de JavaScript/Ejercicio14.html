@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const duplicar = (Array) => {
+            let duplicado = [];
+            for (let i = 0; i < Array.length; i++) {
+                duplicado.push(Array[i]*2);
+            }
+            return duplicado;
+        };
+        let cantidad = parseInt(prompt(`Ingrese la cantidad de numeros: `));
+
+        let numero = [];
+        for (let i = 1; i <= cantidad; i++) {
+            let num = parseInt(prompt(`Ingrese un numero: ${i}:`)); 
+            numero.push(num);
+        }
+        let resultado = duplicar(numero);
+
+        document.write(`Números ingresados: ${numero}<br>`);
+        document.write(`Duplicados: ${resultado}`);
+
+    </script>
+
+</body>
+</html>
