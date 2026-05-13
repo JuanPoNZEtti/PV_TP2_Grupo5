@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #723639;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+p {
+    margin-bottom: 50px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+button {
+    font-size: 1em;
+    color:#723639;
+    background-color: rgb(252, 205, 205);
+    padding: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+button:hover {
+    background-color: #d35e5e;
+    color: white;
+    transform: scale(1.1);
+}
+
+#body-paises label {
+    color: white;
+    font-size: 1.5em;
+    
+}
+
+#body-paises select {
+    border-radius: 5px;
+    padding: 10px;
+}
