@@ -1,4 +1,4 @@
-import { TextoSalida } from '../Ejercicios de JavaScript/Ejercicio22.js'
+import { TextoSalida } from '../Js/Ejercicio22.js'
 
 const input = document.getElementById('entrada');
 const parrafo = document.getElementById('text-write');
