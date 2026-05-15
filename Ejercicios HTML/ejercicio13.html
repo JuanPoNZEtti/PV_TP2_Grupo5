@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+        const mostrarArreglo = (arreglo) => {
+            arreglo.forEach(elemento => {
+                document.write(`${elemento}<br>`); 
+            });
+        };
+
+        
+        const cantidad = parseInt(prompt("Ingrese la cantidad de números para el array:"));
+        const numeros = [];
+
+        for (let i = 0; i < cantidad; i++) {
+            let numero = parseFloat(prompt(`Ingrese el número ${i + 1} de ${cantidad}:`));
+            numeros.push(numero);
+        }
+
+        document.write(`<h3>Contenido del arreglo:</h3>`);
+        mostrarArreglo(numeros);
+    </script>
+</body>
+</html>

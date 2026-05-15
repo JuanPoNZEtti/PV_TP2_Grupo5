@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    <script>
+        
+        const sumarRango = (inicio, fin) => {
+            let suma = 0;
+            for (let i = inicio; i <= fin; i++) {
+                suma += i;
+            }
+            return suma;
+        };
+
+        const num1 = parseInt(prompt("Ingrese el número inicial del rango:"));
+        const num2 = parseInt(prompt("Ingrese el número final del rango:"));
+
+        if (num1 <= num2) {
+            const resultado = sumarRango(num1, num2);
+            document.write(`<h3>Resultado de la suma</h3>`);
+            document.write(`La suma de los números entre ${num1} y ${num2} es: ${resultado}`); 
+        } else {
+            document.write(`Error: El número inicial (${num1}) debe ser menor o igual al final (${num2}).`);
+        }
+    </script>
+</body>
+</html>
